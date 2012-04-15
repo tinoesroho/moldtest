@@ -1,4 +1,0 @@
-default
-wheat
-watermelon
-pumpkin
