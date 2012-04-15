@@ -15,8 +15,8 @@ minetest.register_node ("secretblocks:stone", {
 minetest.register_node ("secretblocks:component", {
 	drawtype = draw,
 	description = "Component",
-	tile_images = {"default_glass.png"},
-	inventory_image = {"default_glass.png"},
+	tile_images = {"default_grass_footsteps.png"},
+	inventory_image = {"default_grass_footsteps.png"},
 	sunlight_propagates = true,
 	paramtype = 'light',
 	walkable = true,
@@ -100,70 +100,70 @@ minetest.register_node("secretblocks:dirt_with_grass", {
 minetest.register_craft({
     output = '"secretblocks:component"',
     recipe = {
-        {", "default:coal_lump", },
-        {", "default:glass", },
+        {'',"default:coal_lump",''},
+        {'',"default:glass",''},
     },
 })
 minetest.register_craft({
     output = '"secretblocks:dirt"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:dirt", , },
+        {"secretblocks:component",'',''},
+        {"default:dirt",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:wood"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:wood", , },
+        {"secretblocks:component",'',''},
+        {"default:wood",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:stone"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:stone", , },
+        {"secretblocks:component",'',''},
+        {"default:stone",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:cobble"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:cobble", , },
+        {"secretblocks:component",'',''},
+        {"default:cobble",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:bookshelf"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:bookshelf", , },
+        {"secretblocks:component",'',''},
+        {"default:bookshelf",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:sand"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:sand", , },
+        {"secretblocks:component",'',''},
+        {"default:sand",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:brick"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:brick", , },
+        {"secretblocks:component",'',''},
+        {"default:brick",'',''},
     },
 })
 
 minetest.register_craft({
     output = '"secretblocks:dirt_with_grass"',
     recipe = {
-        {"secretblocks:component", , },
-        {"default:dirt_with_grass", , },
+        {"secretblocks:component",'',''},
+        {"default:dirt_with_grass",'',''},
     },
 })
