@@ -266,7 +266,7 @@ def content_is_air(d):
     return d in [126, 127, 254]
 
 def read_content(mapdata, version, datapos):
-    if version == 20:
+    if version >= 20:
         if mapdata[datapos] < 0x80:
             return mapdata[datapos]
         else:
