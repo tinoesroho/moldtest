@@ -254,9 +254,9 @@ void initializePaths()
 	path_data = std::string(buf) + "/../share/" + PROJECT_NAME;
 	//path_data = std::string(INSTALL_PREFIX) + "/share/" + PROJECT_NAME;
 	if (!fs::PathExists(path_data)) {
-		dstream<<"WARNING: data path " << path_data << " not found!";
-		path_data = std::string(buf) + "/../data";
-		dstream<<" Trying " << path_data << std::endl;
+		 dstream<<"WARNING: system-wide share not found at \""<<path_share<<"\"";
+		path_share = std::string(buf) + "/../share";
+		dstream<<"WARNING: Using \""<<path_share<<"\" instead."<<std::endl;
 	}
 	
 	path_userdata = std::string(getenv("HOME")) + "/." + PROJECT_NAME;

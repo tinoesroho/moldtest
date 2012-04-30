@@ -1,6 +1,22 @@
 -- Secret_blocks
 -- cuz secret passage was not working
 -- Block types
+minetest.register_node("secretblocks:stone1", {
+	description = "Stonepaper",
+	drawtype = "signlike",
+	tile_images = {"default_stone.png"},
+	inventory_image = "default_stone.png",
+	wield_image = "default_stone.png",
+	paramtype = "light",	
+	paramtype2 = "wallmounted",
+	sunlight_propagates = true,
+	walkable = false,
+	groups = {choppy=2,dig_immediate=3},
+	legacy_wallmounted = false,
+	buildable_to = true,
+	selection_box       = { type = 'wallmounted' },
+})
+
 minetest.register_node ("secretblocks:stone", {
 	drawtype = draw,
 	description = "Stone",
